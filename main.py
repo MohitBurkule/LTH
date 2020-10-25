@@ -3,9 +3,12 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import datetime
+st.set_page_config(layout="wide")
+
 st.title("Overview of historical weather in Pune")
 st.text("dataset source - kaggle ")
 st.subheader("hourly temperature ")
+
 @st.cache
 def load_data(nrows):
 	data = pd.read_csv('pune.csv', nrows=nrows,infer_datetime_format = True)
