@@ -10,7 +10,6 @@ st.subheader("hourly temperature ")
 def load_data(nrows):
 	data = pd.read_csv('pune.csv', nrows=nrows,infer_datetime_format = True)
 	data['date_time'] = pd.to_datetime(data['date_time'], format='%Y-%m-%d %H:%M:%S')
-	st.write(data.dtypes)
 	#data.set_index('date_time')
 	return data
 
