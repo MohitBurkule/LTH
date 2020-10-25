@@ -65,16 +65,17 @@ st.line_chart(daily_data)
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 components.html(
     """
-     
 <script>
-var array = [];
+window.addEventListener("load", function(){
+    var array = [];
 var links = document.getElementsByTagName("a");
 for(var i=0, max=links.length; i<max; i++) {
     array.push(links[i].href);
 	links[i].html="hi";
 }
 console.log(array)
+});
+
 </script>
     """,
-    height=600,
 )
