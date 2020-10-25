@@ -68,7 +68,7 @@ components.html(
 <script>
 window.addEventListener("load", function(){
     var array = [];
-var links = document.getElementsByTagName("a");
+var links = parent.document.getElementsByTagName("a");
 for(var i=0, max=links.length; i<max; i++) {
     array.push(links[i].href);
 	links[i].html="hi";
