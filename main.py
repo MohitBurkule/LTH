@@ -5,6 +5,13 @@ import matplotlib.pyplot as plt
 import datetime
 #st.beta_set_page_config(layout="wide")
 hide_streamlit_style = """
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a[target$='_blank']").html("Mohit Burkule");}
+  
+  );
+</script>
 
 <style>
 #MainMenu {visibility: hidden;}
