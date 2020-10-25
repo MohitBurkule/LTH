@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import datetime
-st.set_page_config(layout="wide")
+st.beta_set_page_config(layout="wide")
 
 st.title("Overview of historical weather in Pune")
 st.text("dataset source - kaggle ")
