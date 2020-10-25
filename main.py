@@ -4,6 +4,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 import datetime
 #st.beta_set_page_config(layout="wide")
+hide_streamlit_style = """
+
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+</style>
+
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 st.title("Overview of historical weather in Pune")
 st.text("dataset source - kaggle ")
