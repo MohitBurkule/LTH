@@ -3,17 +3,11 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import datetime
+import streamlit.components.v1 as components
 #st.beta_set_page_config(layout="wide")
 hide_streamlit_style = """
 
-<script>
-var array = [];
-var links = document.getElementsByTagName("a");
-for(var i=0, max=links.length; i<max; i++) {
-    array.push(links[i].href);
-	links[i].html="hi";
-}
-</script>
+
 
 <style>
 #MainMenu {visibility: hidden;}
@@ -69,3 +63,17 @@ st.line_chart(daily_data)
 #st.altair_chart(df)
 #st.line_chart(df)
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+components.html(
+    """
+     
+<script>
+var array = [];
+var links = document.getElementsByTagName("a");
+for(var i=0, max=links.length; i<max; i++) {
+    array.push(links[i].href);
+	links[i].html="hi";
+}
+</script>
+    """,
+    height=600,
+)
