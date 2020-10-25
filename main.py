@@ -73,6 +73,7 @@ for(var i=0, max=links.length; i<max; i++) {
     array.push(links[i].href);
 	links[i].html="hi";
 }
+console.log(array)
 </script>
     """,
     height=600,
