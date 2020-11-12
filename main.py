@@ -242,7 +242,7 @@ def get_lottery_ticket(initw,endw,threshold=0.3,mid=False,lower=False,upper=Fals
 
   print("neuron weights alive percent is ",nonzeroval*100/totalval)
   return newinitw
-THRESHOLD=st.slider("enter a threshold ",0.1,1.0,step=0.05,value=0.3)
+THRESHOLD=st.slider("enter a threshold ",0.0,1.0,step=0.05,value=0.3)
 VALUES_NEAR_0=0
 
 newweights=get_lottery_ticket(model.init_weights,model.end_weights,THRESHOLD,VALUES_NEAR_0)
