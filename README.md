@@ -1,3 +1,3 @@
-# PUNE_WEATHER
+# Lottery Ticket Hypothesis
 
-A Dashboard showing weather in Pune,India from 2006 to 2020 
+A Vsiualization of lottery ticket hypothesis done in streamlit
