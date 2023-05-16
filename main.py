@@ -240,7 +240,7 @@ def get_lottery_ticket(initw,endw,threshold=0.3,mid=False,lower=False,upper=Fals
     nonzeroval+=np.count_nonzero(mat)
     totalval+=mat.shape[0]*mat.shape[1]
 
-  print("neuron weights alive percent is ",nonzeroval*100/totalval)
+  st.text("neuron weights alive percent is "+str(nonzeroval*100/totalval))
   return newinitw
 THRESHOLD=st.slider("enter a threshold ",0.0,1.0,step=0.05,value=0.3)
 VALUES_NEAR_0=0
